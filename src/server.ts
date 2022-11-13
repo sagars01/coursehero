@@ -47,7 +47,7 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 // **** Add API Routes ****# //
 
 // Add api router
-app.use('/api/v1', apiRouter);
+app.use('/api', apiRouter);
 
 // Error handling
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -2,16 +2,12 @@ import StatusCodes from 'http-status-codes';
 import { Request, Response, Router } from 'express';
 
 import userService from '@services/user-service';
-import { ParamMissingError } from '@shared/errors';
-import { IReq } from 'src/types/express';
-import { IUser } from '@models/user-model';
-
 
 // **** Variables **** //
 
 // Misc
 const router = Router();
-const { CREATED, OK } = StatusCodes;
+const { OK } = StatusCodes;
 
 // Paths
 export const p = {
