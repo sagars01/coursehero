@@ -24,8 +24,9 @@ export const p = {
  * Get all users
  */
 router.get(p.get, async (_: Request, res: Response) => {
-    const users = await courseService.getAll();
-    return res.status(OK).json({users});
+  const courses = await courseService.getAll();
+  console.log(courses)
+  return res.status(OK).json({ courses: courses });
 });
 
 

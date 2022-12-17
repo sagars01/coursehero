@@ -21,11 +21,18 @@ export const p = {
 // **** Routes **** //
 
 /**
+ * Add a new user
+ */
+router.post(p.add, async (req: Request, res: Response) => {
+
+})
+
+/**
  * Get all users
  */
 router.get(p.get, async (_: Request, res: Response) => {
-    const users = await userService.getAll();
-    return res.status(OK).json({users});
+  const users = await userService.getAll();
+  return res.status(OK).json({ users });
 });
 
 
